@@ -1,0 +1,52 @@
+<html>
+<head>
+
+<style> 
+div{
+width: 520px;
+height: 350px;
+background-color: MediumSlateBlue;
+font-size: 60pt;
+background-size: contain;
+color: white;
+text-align: center;
+transition: 1s;
+background-repeat: no-repeat;
+}
+
+
+	
+</style>
+</head>
+<body>
+
+<div onclick="func();" id = "up" ><h2>Gallery<h2>
+</div>
+
+<script>
+x = 0;
+function func()
+{
+if (x<10) {x++};
+
+
+gal = document.querySelector("div"); //вместо  det.elementById  ,  или ("img'+x+'.jpg")
+ gal.style.backgroundImage = "url('"+x+".jpg')";    
+ gal.innerHTML = x;
+}
+
+function funcu()
+{
+if (x>10) {x--};
+gal = document.querySelector("div"); 
+ gal.style.backgroundImage = "url('"+x+".jpg')";    
+ gal.innerHTML = x;
+ 
+ plus.oncli
+
+//elem.classList.add () потом будем использовать, для добавления элемента
+//elem.classList.remuve() 
+
+</script>
+</body>
+</html>

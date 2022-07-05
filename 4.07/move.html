@@ -1,0 +1,42 @@
+
+<html>
+<style>
+body>div {
+height: 200px;
+width: 200px;
+border: 1px solid red;
+}
+div div {
+height: 5px;
+width: 5px;
+background:  green;
+position: absolute;
+}
+
+
+
+</style>
+<body>
+<div></div>
+
+
+<script>
+main_div=document.querySelector("div");
+main_div.onmousedown= function(e)
+
+{
+	main_div.onmousemove= function(e){
+		div=document.createElement("div");
+		div.style.left=e.clientX+"px";
+		div.style.top=e.clientY+"px";
+		main_div.append(div);
+			}
+			}
+main_div.onmouseup= function(e){
+main_div.onmousemove= 0;
+}
+</script>
+</body>
+
+
+</html>

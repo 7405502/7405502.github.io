@@ -1,0 +1,30 @@
+
+ 
+<!doctype html>
+<html lang="ru">
+  <head> </head>
+  
+  <style> div{
+  display: inline-block;
+  
+   width:20px;
+   height:20px;
+   border:1px double yellow;
+  }
+   </style>
+  <body> 
+  
+  
+<script>
+
+x = 0;
+while (x<100) 
+{	
+ el=document.createElement("div");
+el.innerHTML= "<span>"+x+"</span>";
+document.body.append(el);
+
+x++;	
+}
+	</script>
+	</body>

@@ -1,0 +1,119 @@
+<html><head>
+
+<body>
+
+<script>
+
+body = document.createElement("button");
+<!--ul = document.createElement(li);-->
+body.innerHTML = "Do it!";
+document.body.append(body);
+
+<!-- docomment.body.InnerHTML =  -->
+
+/*ul = body = document.createElement("button");
+<!--ul = document.createElement(li);-->
+body.innerHTML = "Do it!";
+document.body.append(body);*/
+
+ul = document.createElement("ul");
+li = document.createElement("li");
+
+li.innerHTML = "Приветики!"
+ul.append(li);
+//body.innerHTML = "ul";
+document.body.append(ul);
+
+
+
+/*<table><tr><td>123</td></tr></table>*/
+
+tb = document.createElement("table");
+t_r = document.createElement("tr");
+t_d = document.createElement("td");
+t_d.innerHTML = "123";
+t_d.append(t_r);
+t_r.append(tb);
+document.body.append(t_d);
+document.body.append(t_r);
+
+
+
+tb = document.createElement("table");
+t_tr = document.createElement("tr");
+t_td = document.createElement("td");
+
+t_td.innerHTML = "123";
+t_tr.append(t_td);
+tb.append(t_tr); // добавляем html
+document.body.append(tb);
+t_td.style.background = "yellow";
+t_td.style.border = "2px solid red";
+
+//---------------------------
+//document.getElementById("a1").append(tb); // в div
+
+//ss = document.getElementById("a1");  //   тоже в div
+
+//ss.append(tb); // тоже в div
+
+//   21/06/2022
+
+//x = prompt( "введите Фрукт");
+//y = prompt( "введите овощь");
+//z = prompt( "введите блюдо");
+///////////////if(x>z) if (x>z)////
+// alert(x+", "+y+", "+z);
+ 
+
+//a = prompt( "введите число");
+//b = prompt( "введите другое число");
+//if(a>b); 
+//else {alert(b)};
+//if(a<b);
+//else {alert(a)};
+
+
+//a = prompt( "введите число");
+//b = prompt( "введите другое число");
+//alert(a*1+b*1);
+
+
+//x = prompt( "введите x")*1;
+//y = prompt( "введите y")*1;
+//z = prompt( "введите z")*1;
+//if(x>y) 
+//	{if (x>z) {alert(x);}
+	//	else { alert(z);}
+//	}
+//else { if(y>z) { alert(y); }
+//	else { alert(z);}
+//}
+
+
+//x = prompt( "нужен ли div? yes or no");
+//if(x=="yes")  {
+//y = prompt( "введите название кнопки");
+//x = document.createElement ("button");
+//x.innerHTML = y;
+//document.body.append(x);
+//body.innerHTML = y;
+
+
+tagName =  prompt("введите тег");
+x = document.createElement(tagName);
+x.innerHTML=""
+document.body.append(x);
+
+
+
+
+
+
+//document.createElement("li").innerHTML="123"
+//document.getElementById("")
+</script>
+
+</body>
+</head>
+</html>

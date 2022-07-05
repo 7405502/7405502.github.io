@@ -1,0 +1,41 @@
+ <!doctype html>
+<html lang="ru">
+  <head> </head>
+  
+  <style> div{
+  display: inline-block;
+  
+   width:20px;
+   height:20px;
+   border:1px double yellow;
+   
+  }
+  td {
+  border: 1px dotted violet;}
+  table{
+  border: 2px dashed pink;
+  }
+   </style>
+  <body> 
+    <script>
+function calendar(z)
+{
+x=0 ;
+t = document.createElement("table");
+while (x<z){
+tr = document.createElement("tr");
+	y=0;
+	while(y<z)
+	{
+	td = document.createElement("td");
+	td.innerHTML = x+"&"+y;
+
+	tr.append(td); y++;}
+	t.append(tr);
+x++;}
+document.body.append(t);
+}
+
+calendar(7)
+	</script>
+	</body>

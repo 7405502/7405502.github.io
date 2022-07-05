@@ -1,0 +1,56 @@
+ 
+	<!doctype html>
+<html lang="ru">
+  <head> </head>
+  
+  <style> div{
+  display: inline-block;
+vertical-align: middle;
+   text-align: center;
+
+  align-items: center;
+   width:30px;
+   height:30px;
+   border:1px double yellow;
+   
+  }
+  td {
+  border: 1px dotted violet;}
+  table{
+  border: 2px dashed pink;
+
+  .bk {
+  display:flex;
+  justyfy-content: center;
+  align-items:center;
+  background-color:red;
+  }
+  
+  
+   </style>
+  <body> 
+	<textarea >ввести число</textarea>
+	<button onclick="buckvy()">создать массив</button>
+    <script>
+	
+	//word="привет";
+	
+	
+//	word [i];
+	
+	function buckvy()
+	{
+	txt=document.querySelector("textarea");
+	z=txt.value;
+	
+	for(i=0; i<z.length; i++)
+	{
+	el=document.createElement("div"); //  сздает div
+	el.className=("bk"); //  вводит класс "bk"
+
+	el.innerHTML = z[i];
+	document.body.append(el);
+	}
+	}
+</script>
+	</body>

@@ -1,0 +1,77 @@
+<html>
+<head>
+
+<style> 
+div{
+width: 320px;
+height: 250px;
+background-color: MediumSlateBlue;
+font-size: 60pt;
+background-size: contain;
+color: white;
+text-align: center;
+transition: 1s;
+background-repeat: no-repeat;
+border: 10px double Gold;
+vertical-align: middle;
+display: inline-block;
+}
+
+
+	
+</style>
+</head>
+<body>
+
+<div id = "up" style="margin-left: 100px; 
+margin-top: 28px;">Gallery
+<div onclick="back();" style="
+	
+	text-align: left;
+	width: 46px;
+	"
+	id="left"
+	> < </div>
+<div id="kkk"></div>
+<div onclick="func();"  style="
+	
+	margin-left: 341px;
+	width: 49px;
+	margin-top:"
+	id="right"> > </div>
+
+</div>
+
+ 
+
+<script>
+x = 0;
+function func()
+{
+if (x<10) {x++} else {x=10;}
+
+gal = document.querySelector("#kkk"); //вместо  det.elementById  ,  или ("img'+x+'.jpg")
+ up.classList.toggle('right')
+  gal.innerHTML = x;
+ gal.style.backgroundImage = "url('"+x+".jpg')";    
+
+}
+x = 0;
+function back()
+{
+if (x>0) {x--} else {x=10;}
+right.innerHTML = x;
+
+gal = document.querySelector("#kkk"); 
+up.classList.toggle('left')
+gal.style.backgroundImage = "url('"+x+".jpg')";    
+gal.innerHTML = x;
+ }
+ //plus.onclick
+ //minus.onclick
+//elem.classList.add () потом будем использовать, для добавления элемента
+//elem.classList.remuve() 
+
+</script>
+</body>
+</html>

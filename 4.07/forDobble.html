@@ -1,0 +1,45 @@
+ <!doctype html>
+<html lang="ru">
+  <head> </head>
+  
+  <style> div{
+  display: inline-block;
+  
+   width:20px;
+   height:20px;
+   border:1px double yellow;
+   
+  }
+  td {
+  border: 1px dotted violet;}
+  table{
+  border: 2px dashed pink;
+  }
+   </style>
+  <body> 
+	<textarea ="text">ввести число</textarea>
+	<button onclick="calendar()">создать таблицу</button>
+    <script>
+	
+function calendar(z)
+{
+txt=document.querySelector("textarea");
+z=txt.value; // размер таблицы под введенное число
+t = document.createElement("table");
+for (x=0; x<z; x++){
+tr = document.createElement("tr");
+
+	for (y=0; y<z; y++)
+	{
+	td = document.createElement("td");
+	td.innerHTML = x+"&"+y;
+
+	tr.append(td); }
+	t.append(tr);
+}
+document.body.append(t);
+}
+
+calendar(7);
+	</script>
+	</body>

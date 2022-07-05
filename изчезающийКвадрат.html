@@ -1,0 +1,39 @@
+<html>
+<head>
+
+<style> div {
+	width:183px;
+	height:180px;
+	background: green ;
+	transition: 1s;
+	}
+	
+	div:hover{	
+	background: yellow !important;
+	}
+	a{
+	color: pink;
+	}
+</style>
+</head>
+<body>
+
+<div onclick="fly()"></div>
+<script>
+function s()
+{
+alert("Hello");
+}
+//s(); что бы не выкакивало окно приветствия
+function fly()
+{x = document.querySelector("div");
+x.style.background= "PaleGreen";
+x.style.border = "4px solid blue";
+x.innerHTML = "Приветики!";
+x.style.width="100px";
+x.style.paddingLeft="400";
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<html>
+<head>
+
+<style> 
+div{
+width: 320px;
+height: 250px;
+background-color: MediumSlateBlue;
+font-size: 60pt;
+background-size: contain;
+color: white;
+text-align: center;
+transition: 1s;
+background-repeat: no-repeat;
+border: 10px double Gold;
+vertical-align: middle;
+display: inline-block;
+}
+
+
+	
+</style>
+</head>
+<body>
+
+<div id = "up" style="margin-left: 100px; 
+margin-top: 28px;">Gallery
+<div onclick="moove1();" style="
+	
+	text-align: left;
+	width: 46px;
+	"
+	id="left"
+	> < </div>
+<div id="kkk"></div>
+<div onclick="move0();"  style="
+	
+	margin-left: 341px;
+	width: 49px;
+	margin-top:"
+	id="right"> > </div>
+
+</div>
+
+ 
+
+<script>
+x = 0;
+
+gal = document.querySelector("#kkk");
+function move (napravlenie )
+{
+if (napravlenie==1) {
+x--;
+  if(x<0) {x=10;}
+  }
+if (napravlenie==1){
+x++;
+if(x>10) {x=0;}
+}
+
+gal.innerHTML = x;
+
+
+
+
+<!--gal.oneclick = left 
+//function back()
+//{
+ // gal.innerHTML = x;
+ //x++;
+//}
+//x = 10;
+//gal = document.querySelector("#kkk");
+//gal.oneclick = right
+//function func()
+//{
+//  gal.innerHTML = x;
+//x--;
+//}-->
+
+
+</script>
+</body>
+</html>
